@@ -1,0 +1,1101 @@
+planChat
+  - path: /svelte.config.js
+    type: file
+  - path: /LICENSE
+    type: file
+  - path: /Dockerfile
+    type: file
+  - path: /chart
+    type: directory
+    contents:
+    - path: /chart/Chart.yaml
+      type: file
+    - path: /chart/env
+      type: directory
+      contents:
+      - path: /chart/env/prod.yaml
+        type: file
+    - path: /chart/templates
+      type: directory
+      contents:
+      - path: /chart/templates/service-monitor.yaml
+        type: file
+      - path: /chart/templates/deployment.yaml
+        type: file
+      - path: /chart/templates/infisical.yaml
+        type: file
+      - path: /chart/templates/ingress.yaml
+        type: file
+      - path: /chart/templates/config.yaml
+        type: file
+      - path: /chart/templates/service.yaml
+        type: file
+      - path: /chart/templates/hpa.yaml
+        type: file
+      - path: /chart/templates/service-account.yaml
+        type: file
+      - path: /chart/templates/_helpers.tpl
+        type: file
+    - path: /chart/values.yaml
+      type: file
+  - path: /PRIVACY.md
+    type: file
+  - path: /docs
+    type: directory
+    contents:
+    - path: /docs/source
+      type: directory
+      contents:
+      - path: /docs/source/configuration
+        type: directory
+        contents:
+        - path: /docs/source/configuration/overview.md
+          type: file
+        - path: /docs/source/configuration/embeddings.md
+          type: file
+        - path: /docs/source/configuration/common-issues.md
+          type: file
+        - path: /docs/source/configuration/web-search.md
+          type: file
+        - path: /docs/source/configuration/models
+          type: directory
+          contents:
+          - path: /docs/source/configuration/models/overview.md
+            type: file
+          - path: /docs/source/configuration/models/providers
+            type: directory
+            contents:
+            - path: /docs/source/configuration/models/providers/anthropic.md
+              type: file
+            - path: /docs/source/configuration/models/providers/tgi.md
+              type: file
+            - path: /docs/source/configuration/models/providers/openai.md
+              type: file
+            - path: /docs/source/configuration/models/providers/langserve.md
+              type: file
+            - path: /docs/source/configuration/models/providers/ollama.md
+              type: file
+            - path: /docs/source/configuration/models/providers/llamacpp.md
+              type: file
+            - path: /docs/source/configuration/models/providers/cohere.md
+              type: file
+            - path: /docs/source/configuration/models/providers/google.md
+              type: file
+            - path: /docs/source/configuration/models/providers/cloudflare.md
+              type: file
+            - path: /docs/source/configuration/models/providers/aws.md
+              type: file
+          - path: /docs/source/configuration/models/multimodal.md
+            type: file
+          - path: /docs/source/configuration/models/tools.md
+            type: file
+        - path: /docs/source/configuration/open-id.md
+          type: file
+        - path: /docs/source/configuration/theming.md
+          type: file
+        - path: /docs/source/configuration/metrics.md
+          type: file
+      - path: /docs/source/developing
+        type: directory
+        contents:
+        - path: /docs/source/developing/architecture.md
+          type: file
+        - path: /docs/source/developing/copy-huggingchat.md
+          type: file
+      - path: /docs/source/_toctree.yml
+        type: file
+      - path: /docs/source/installation
+        type: directory
+        contents:
+        - path: /docs/source/installation/helm.md
+          type: file
+        - path: /docs/source/installation/docker.md
+          type: file
+        - path: /docs/source/installation/spaces.md
+          type: file
+        - path: /docs/source/installation/local.md
+          type: file
+      - path: /docs/source/index.md
+        type: file
+  - path: /README.md
+    type: file
+  - path: /tailwind.config.cjs
+    type: file
+  - path: /package-lock.json
+    type: file
+  - path: /package.json
+    type: file
+  - path: /static
+    type: directory
+    contents:
+    - path: /static/chatui
+      type: directory
+      contents:
+      - path: /static/chatui/icon-256x256.png
+        type: file
+      - path: /static/chatui/favicon.ico
+        type: file
+      - path: /static/chatui/apple-touch-icon.png
+        type: file
+      - path: /static/chatui/icon.svg
+        type: file
+      - path: /static/chatui/manifest.json
+        type: file
+      - path: /static/chatui/icon-512x512.png
+        type: file
+      - path: /static/chatui/logo.svg
+        type: file
+      - path: /static/chatui/favicon.svg
+        type: file
+      - path: /static/chatui/icon-128x128.png
+        type: file
+    - path: /static/huggingchat
+      type: directory
+      contents:
+      - path: /static/huggingchat/icon-192x192.png
+        type: file
+      - path: /static/huggingchat/assistants-thumbnail.png
+        type: file
+      - path: /static/huggingchat/icon-256x256.png
+        type: file
+      - path: /static/huggingchat/favicon.ico
+        type: file
+      - path: /static/huggingchat/apple-touch-icon.png
+        type: file
+      - path: /static/huggingchat/tools-thumbnail.png
+        type: file
+      - path: /static/huggingchat/icon-72x72.png
+        type: file
+      - path: /static/huggingchat/icon-36x36.png
+        type: file
+      - path: /static/huggingchat/icon-96x96.png
+        type: file
+      - path: /static/huggingchat/icon.svg
+        type: file
+      - path: /static/huggingchat/icon-48x48.png
+        type: file
+      - path: /static/huggingchat/manifest.json
+        type: file
+      - path: /static/huggingchat/thumbnail.png
+        type: file
+      - path: /static/huggingchat/icon-512x512.png
+        type: file
+      - path: /static/huggingchat/icon-144x144.png
+        type: file
+      - path: /static/huggingchat/logo.svg
+        type: file
+      - path: /static/huggingchat/favicon.svg
+        type: file
+      - path: /static/huggingchat/icon-128x128.png
+        type: file
+    - path: /static/fonts
+      type: directory
+      contents:
+      - path: /static/fonts/Inter-Medium.ttf
+        type: file
+      - path: /static/fonts/Inter-Light.ttf
+        type: file
+      - path: /static/fonts/Inter-Thin.ttf
+        type: file
+      - path: /static/fonts/Inter-Bold.ttf
+        type: file
+      - path: /static/fonts/Inter-Regular.ttf
+        type: file
+      - path: /static/fonts/Inter-ExtraBold.ttf
+        type: file
+      - path: /static/fonts/Inter-ExtraLight.ttf
+        type: file
+      - path: /static/fonts/Inter-Black.ttf
+        type: file
+      - path: /static/fonts/Inter-SemiBold.ttf
+        type: file
+  - path: /scripts
+    type: directory
+    contents:
+    - path: /scripts/updateLocalEnv.ts
+      type: file
+    - path: /scripts/populate.ts
+      type: file
+    - path: /scripts/setupTest.ts
+      type: file
+  - path: /tsconfig.json
+    type: file
+  - path: /PROMPTS.md
+    type: file
+  - path: /repo_structure.yaml
+    type: file
+  - path: /postcss.config.js
+    type: file
+  - path: /entrypoint.sh
+    type: file
+  - path: /src
+    type: directory
+    contents:
+    - path: /src/app.d.ts
+      type: file
+    - path: /src/styles
+      type: directory
+      contents:
+      - path: /src/styles/main.css
+        type: file
+      - path: /src/styles/highlight-js.css
+        type: file
+    - path: /src/ambient.d.ts
+      type: file
+    - path: /src/lib
+      type: directory
+      contents:
+      - path: /src/lib/migrations
+        type: directory
+        contents:
+        - path: /src/lib/migrations/migrations.ts
+          type: file
+        - path: /src/lib/migrations/lock.ts
+          type: file
+        - path: /src/lib/migrations/routines
+          type: directory
+          contents:
+          - path: /src/lib/migrations/routines/06-trim-message-updates.ts
+            type: file
+          - path: /src/lib/migrations/routines/02-update-assistants-models.ts
+            type: file
+          - path: /src/lib/migrations/routines/01-update-search-assistants.ts
+            type: file
+          - path: /src/lib/migrations/routines/07-reset-tools-in-settings.ts
+            type: file
+          - path: /src/lib/migrations/routines/03-add-tools-in-settings.ts
+            type: file
+          - path: /src/lib/migrations/routines/04-update-message-updates.ts
+            type: file
+          - path: /src/lib/migrations/routines/05-update-message-files.ts
+            type: file
+          - path: /src/lib/migrations/routines/index.ts
+            type: file
+        - path: /src/lib/migrations/migrations.spec.ts
+          type: file
+      - path: /src/lib/types
+        type: directory
+        contents:
+        - path: /src/lib/types/ConvSidebar.ts
+          type: file
+        - path: /src/lib/types/MessageUpdate.ts
+          type: file
+        - path: /src/lib/types/MigrationResult.ts
+          type: file
+        - path: /src/lib/types/Report.ts
+          type: file
+        - path: /src/lib/types/ConversationStats.ts
+          type: file
+        - path: /src/lib/types/Tool.ts
+          type: file
+        - path: /src/lib/types/MessageEvent.ts
+          type: file
+        - path: /src/lib/types/Template.ts
+          type: file
+        - path: /src/lib/types/Settings.ts
+          type: file
+        - path: /src/lib/types/WebSearch.ts
+          type: file
+        - path: /src/lib/types/Model.ts
+          type: file
+        - path: /src/lib/types/AbortedGeneration.ts
+          type: file
+        - path: /src/lib/types/Message.ts
+          type: file
+        - path: /src/lib/types/Session.ts
+          type: file
+        - path: /src/lib/types/SharedConversation.ts
+          type: file
+        - path: /src/lib/types/Assistant.ts
+          type: file
+        - path: /src/lib/types/TokenCache.ts
+          type: file
+        - path: /src/lib/types/Semaphore.ts
+          type: file
+        - path: /src/lib/types/Timestamps.ts
+          type: file
+        - path: /src/lib/types/Conversation.ts
+          type: file
+        - path: /src/lib/types/AssistantStats.ts
+          type: file
+        - path: /src/lib/types/User.ts
+          type: file
+        - path: /src/lib/types/UrlDependency.ts
+          type: file
+      - path: /src/lib/shareConversation.ts
+        type: file
+      - path: /src/lib/constants
+        type: directory
+        contents:
+        - path: /src/lib/constants/publicSepToken.ts
+          type: file
+      - path: /src/lib/stores
+        type: directory
+        contents:
+        - path: /src/lib/stores/errors.ts
+          type: file
+        - path: /src/lib/stores/settings.ts
+          type: file
+        - path: /src/lib/stores/webSearchParameters.ts
+          type: file
+        - path: /src/lib/stores/titleUpdate.ts
+          type: file
+        - path: /src/lib/stores/isAborted.ts
+          type: file
+        - path: /src/lib/stores/pendingMessage.ts
+          type: file
+        - path: /src/lib/stores/convTree.ts
+          type: file
+      - path: /src/lib/buildPrompt.ts
+        type: file
+      - path: /src/lib/server
+        type: directory
+        contents:
+        - path: /src/lib/server/sentenceSimilarity.ts
+          type: file
+        - path: /src/lib/server/embeddingModels.ts
+          type: file
+        - path: /src/lib/server/tools
+          type: directory
+          contents:
+          - path: /src/lib/server/tools/outputs.ts
+            type: file
+          - path: /src/lib/server/tools/web
+            type: directory
+            contents:
+            - path: /src/lib/server/tools/web/search.ts
+              type: file
+            - path: /src/lib/server/tools/web/url.ts
+              type: file
+          - path: /src/lib/server/tools/calculator.ts
+            type: file
+          - path: /src/lib/server/tools/utils.ts
+            type: file
+          - path: /src/lib/server/tools/directlyAnswer.ts
+            type: file
+          - path: /src/lib/server/tools/index.ts
+            type: file
+        - path: /src/lib/server/endpoints
+          type: directory
+          contents:
+          - path: /src/lib/server/endpoints/cohere
+            type: directory
+            contents:
+            - path: /src/lib/server/endpoints/cohere/endpointCohere.ts
+              type: file
+          - path: /src/lib/server/endpoints/endpoints.ts
+            type: file
+          - path: /src/lib/server/endpoints/llamacpp
+            type: directory
+            contents:
+            - path: /src/lib/server/endpoints/llamacpp/endpointLlamacpp.ts
+              type: file
+          - path: /src/lib/server/endpoints/google
+            type: directory
+            contents:
+            - path: /src/lib/server/endpoints/google/endpointVertex.ts
+              type: file
+            - path: /src/lib/server/endpoints/google/endpointGenAI.ts
+              type: file
+          - path: /src/lib/server/endpoints/images.ts
+            type: file
+          - path: /src/lib/server/endpoints/cloudflare
+            type: directory
+            contents:
+            - path: /src/lib/server/endpoints/cloudflare/endpointCloudflare.ts
+              type: file
+          - path: /src/lib/server/endpoints/tgi
+            type: directory
+            contents:
+            - path: /src/lib/server/endpoints/tgi/endpointTgi.ts
+              type: file
+          - path: /src/lib/server/endpoints/langserve
+            type: directory
+            contents:
+            - path: /src/lib/server/endpoints/langserve/endpointLangserve.ts
+              type: file
+          - path: /src/lib/server/endpoints/anthropic
+            type: directory
+            contents:
+            - path: /src/lib/server/endpoints/anthropic/endpointAnthropicVertex.ts
+              type: file
+            - path: /src/lib/server/endpoints/anthropic/endpointAnthropic.ts
+              type: file
+            - path: /src/lib/server/endpoints/anthropic/utils.ts
+              type: file
+          - path: /src/lib/server/endpoints/aws
+            type: directory
+            contents:
+            - path: /src/lib/server/endpoints/aws/endpointAws.ts
+              type: file
+            - path: /src/lib/server/endpoints/aws/endpointBedrock.ts
+              type: file
+          - path: /src/lib/server/endpoints/ollama
+            type: directory
+            contents:
+            - path: /src/lib/server/endpoints/ollama/endpointOllama.ts
+              type: file
+          - path: /src/lib/server/endpoints/preprocessMessages.ts
+            type: file
+          - path: /src/lib/server/endpoints/openai
+            type: directory
+            contents:
+            - path: /src/lib/server/endpoints/openai/endpointOai.ts
+              type: file
+            - path: /src/lib/server/endpoints/openai/openAIChatToTextGenerationStream.ts
+              type: file
+            - path: /src/lib/server/endpoints/openai/openAICompletionToTextGenerationStream.ts
+              type: file
+        - path: /src/lib/server/textGeneration
+          type: directory
+          contents:
+          - path: /src/lib/server/textGeneration/title.ts
+            type: file
+          - path: /src/lib/server/textGeneration/types.ts
+            type: file
+          - path: /src/lib/server/textGeneration/assistant.ts
+            type: file
+          - path: /src/lib/server/textGeneration/tools.ts
+            type: file
+          - path: /src/lib/server/textGeneration/generate.ts
+            type: file
+          - path: /src/lib/server/textGeneration/index.ts
+            type: file
+        - path: /src/lib/server/usageLimits.ts
+          type: file
+        - path: /src/lib/server/exitHandler.ts
+          type: file
+        - path: /src/lib/server/generateFromDefaultEndpoint.ts
+          type: file
+        - path: /src/lib/server/websearch
+          type: directory
+          contents:
+          - path: /src/lib/server/websearch/embed
+            type: directory
+            contents:
+            - path: /src/lib/server/websearch/embed/embed.ts
+              type: file
+            - path: /src/lib/server/websearch/embed/combine.ts
+              type: file
+            - path: /src/lib/server/websearch/embed/tree.ts
+              type: file
+          - path: /src/lib/server/websearch/markdown
+            type: directory
+            contents:
+            - path: /src/lib/server/websearch/markdown/fromHtml.ts
+              type: file
+            - path: /src/lib/server/websearch/markdown/utils
+              type: directory
+              contents:
+              - path: /src/lib/server/websearch/markdown/utils/nlp.ts
+                type: file
+              - path: /src/lib/server/websearch/markdown/utils/chunk.ts
+                type: file
+              - path: /src/lib/server/websearch/markdown/utils/stringify.ts
+                type: file
+            - path: /src/lib/server/websearch/markdown/types.ts
+              type: file
+            - path: /src/lib/server/websearch/markdown/tree.ts
+              type: file
+          - path: /src/lib/server/websearch/runWebSearch.ts
+            type: file
+          - path: /src/lib/server/websearch/scrape
+            type: directory
+            contents:
+            - path: /src/lib/server/websearch/scrape/scrape.ts
+              type: file
+            - path: /src/lib/server/websearch/scrape/parser.ts
+              type: file
+            - path: /src/lib/server/websearch/scrape/types.ts
+              type: file
+            - path: /src/lib/server/websearch/scrape/playwright.ts
+              type: file
+          - path: /src/lib/server/websearch/search
+            type: directory
+            contents:
+            - path: /src/lib/server/websearch/search/endpoints.ts
+              type: file
+            - path: /src/lib/server/websearch/search/endpoints
+              type: directory
+              contents:
+              - path: /src/lib/server/websearch/search/endpoints/serpStack.ts
+                type: file
+              - path: /src/lib/server/websearch/search/endpoints/webLocal.ts
+                type: file
+              - path: /src/lib/server/websearch/search/endpoints/bing.ts
+                type: file
+              - path: /src/lib/server/websearch/search/endpoints/searxng.ts
+                type: file
+              - path: /src/lib/server/websearch/search/endpoints/serper.ts
+                type: file
+              - path: /src/lib/server/websearch/search/endpoints/youApi.ts
+                type: file
+              - path: /src/lib/server/websearch/search/endpoints/searchApi.ts
+                type: file
+              - path: /src/lib/server/websearch/search/endpoints/serpApi.ts
+                type: file
+            - path: /src/lib/server/websearch/search/search.ts
+              type: file
+            - path: /src/lib/server/websearch/search/generateQuery.ts
+              type: file
+          - path: /src/lib/server/websearch/update.ts
+            type: file
+        - path: /src/lib/server/logger.ts
+          type: file
+        - path: /src/lib/server/database.ts
+          type: file
+        - path: /src/lib/server/files
+          type: directory
+          contents:
+          - path: /src/lib/server/files/uploadFile.ts
+            type: file
+          - path: /src/lib/server/files/downloadFile.ts
+            type: file
+        - path: /src/lib/server/isURLLocal.ts
+          type: file
+        - path: /src/lib/server/models.ts
+          type: file
+        - path: /src/lib/server/abortedGenerations.ts
+          type: file
+        - path: /src/lib/server/isURLLocal.spec.ts
+          type: file
+        - path: /src/lib/server/embeddingEndpoints
+          type: directory
+          contents:
+          - path: /src/lib/server/embeddingEndpoints/embeddingEndpoints.ts
+            type: file
+          - path: /src/lib/server/embeddingEndpoints/hfApi
+            type: directory
+            contents:
+            - path: /src/lib/server/embeddingEndpoints/hfApi/embeddingHfApi.ts
+              type: file
+          - path: /src/lib/server/embeddingEndpoints/transformersjs
+            type: directory
+            contents:
+            - path: /src/lib/server/embeddingEndpoints/transformersjs/embeddingEndpoints.ts
+              type: file
+          - path: /src/lib/server/embeddingEndpoints/tei
+            type: directory
+            contents:
+            - path: /src/lib/server/embeddingEndpoints/tei/embeddingEndpoints.ts
+              type: file
+          - path: /src/lib/server/embeddingEndpoints/openai
+            type: directory
+            contents:
+            - path: /src/lib/server/embeddingEndpoints/openai/embeddingEndpoints.ts
+              type: file
+        - path: /src/lib/server/metrics.ts
+          type: file
+        - path: /src/lib/server/auth.ts
+          type: file
+      - path: /src/lib/utils
+        type: directory
+        contents:
+        - path: /src/lib/utils/mergeAsyncGenerators.ts
+          type: file
+        - path: /src/lib/utils/parseStringToList.ts
+          type: file
+        - path: /src/lib/utils/tree
+          type: directory
+          contents:
+          - path: /src/lib/utils/tree/addChildren.ts
+            type: file
+          - path: /src/lib/utils/tree/treeHelpers.spec.ts
+            type: file
+          - path: /src/lib/utils/tree/addSibling.ts
+            type: file
+          - path: /src/lib/utils/tree/isMessageId.spec.ts
+            type: file
+          - path: /src/lib/utils/tree/isMessageId.ts
+            type: file
+          - path: /src/lib/utils/tree/addChildren.spec.ts
+            type: file
+          - path: /src/lib/utils/tree/addSibling.spec.ts
+            type: file
+          - path: /src/lib/utils/tree/convertLegacyConversation.ts
+            type: file
+          - path: /src/lib/utils/tree/convertLegacyConversation.spec.ts
+            type: file
+          - path: /src/lib/utils/tree/buildSubtree.spec.ts
+            type: file
+          - path: /src/lib/utils/tree/buildSubtree.ts
+            type: file
+        - path: /src/lib/utils/file2base64.ts
+          type: file
+        - path: /src/lib/utils/isHuggingChat.ts
+          type: file
+        - path: /src/lib/utils/getShareUrl.ts
+          type: file
+        - path: /src/lib/utils/debounce.ts
+          type: file
+        - path: /src/lib/utils/formatUserCount.ts
+          type: file
+        - path: /src/lib/utils/sum.ts
+          type: file
+        - path: /src/lib/utils/messageUpdates.ts
+          type: file
+        - path: /src/lib/utils/template.ts
+          type: file
+        - path: /src/lib/utils/share.ts
+          type: file
+        - path: /src/lib/utils/deepestChild.ts
+          type: file
+        - path: /src/lib/utils/chunk.ts
+          type: file
+        - path: /src/lib/utils/randomUuid.ts
+          type: file
+        - path: /src/lib/utils/searchTokens.ts
+          type: file
+        - path: /src/lib/utils/timeout.ts
+          type: file
+        - path: /src/lib/utils/sha256.ts
+          type: file
+        - path: /src/lib/utils/tools.ts
+          type: file
+        - path: /src/lib/utils/hashConv.ts
+          type: file
+        - path: /src/lib/utils/models.ts
+          type: file
+        - path: /src/lib/utils/isDesktop.ts
+          type: file
+        - path: /src/lib/utils/getTokenizer.ts
+          type: file
+        - path: /src/lib/utils/getGradioApi.ts
+          type: file
+        - path: /src/lib/utils/getHref.ts
+          type: file
+        - path: /src/lib/utils/cookiesAreEnabled.ts
+          type: file
+        - path: /src/lib/utils/stringifyError.ts
+          type: file
+        - path: /src/lib/utils/isUrl.ts
+          type: file
+      - path: /src/lib/switchTheme.ts
+        type: file
+      - path: /src/lib/components
+        type: directory
+        contents:
+        - path: /src/lib/components/Modal.svelte
+          type: file
+        - path: /src/lib/components/ExpandNavigation.svelte
+          type: file
+        - path: /src/lib/components/MobileNav.svelte
+          type: file
+        - path: /src/lib/components/Tooltip.svelte
+          type: file
+        - path: /src/lib/components/UploadBtn.svelte
+          type: file
+        - path: /src/lib/components/StopGeneratingBtn.svelte
+          type: file
+        - path: /src/lib/components/CopyToClipBoardBtn.svelte
+          type: file
+        - path: /src/lib/components/ScrollToBottomBtn.svelte
+          type: file
+        - path: /src/lib/components/chat
+          type: directory
+          contents:
+          - path: /src/lib/components/chat/FileDropzone.svelte
+            type: file
+          - path: /src/lib/components/chat/ChatInput.svelte
+            type: file
+          - path: /src/lib/components/chat/ChatIntroduction.svelte
+            type: file
+          - path: /src/lib/components/chat/ChatMessage.svelte
+            type: file
+          - path: /src/lib/components/chat/ModelSwitch.svelte
+            type: file
+          - path: /src/lib/components/chat/ToolUpdate.svelte
+            type: file
+          - path: /src/lib/components/chat/ChatWindow.svelte
+            type: file
+          - path: /src/lib/components/chat/AssistantIntroduction.svelte
+            type: file
+          - path: /src/lib/components/chat/UploadedFile.svelte
+            type: file
+        - path: /src/lib/components/Toast.svelte
+          type: file
+        - path: /src/lib/components/NavConversationItem.svelte
+          type: file
+        - path: /src/lib/components/players
+          type: directory
+          contents:
+          - path: /src/lib/components/players/AudioPlayer.svelte
+            type: file
+        - path: /src/lib/components/AssistantToolPicker.svelte
+          type: file
+        - path: /src/lib/components/LoginModal.svelte
+          type: file
+        - path: /src/lib/components/AnnouncementBanner.svelte
+          type: file
+        - path: /src/lib/components/ToolsMenu.svelte
+          type: file
+        - path: /src/lib/components/RetryBtn.svelte
+          type: file
+        - path: /src/lib/components/HoverTooltip.svelte
+          type: file
+        - path: /src/lib/components/PaginationArrow.svelte
+          type: file
+        - path: /src/lib/components/Switch.svelte
+          type: file
+        - path: /src/lib/components/Pagination.svelte
+          type: file
+        - path: /src/lib/components/icons
+          type: directory
+          contents:
+          - path: /src/lib/components/icons/IconChevron.svelte
+            type: file
+          - path: /src/lib/components/icons/Logo.svelte
+            type: file
+          - path: /src/lib/components/icons/LogoHuggingFaceBorderless.svelte
+            type: file
+          - path: /src/lib/components/icons/IconCopy.svelte
+            type: file
+          - path: /src/lib/components/icons/IconInternet.svelte
+            type: file
+          - path: /src/lib/components/icons/IconNew.svelte
+            type: file
+          - path: /src/lib/components/icons/IconLoading.svelte
+            type: file
+          - path: /src/lib/components/icons/IconDazzled.svelte
+            type: file
+          - path: /src/lib/components/icons/IconTool.svelte
+            type: file
+        - path: /src/lib/components/NavMenu.svelte
+          type: file
+        - path: /src/lib/components/AssistantSettings.svelte
+          type: file
+        - path: /src/lib/components/ContinueBtn.svelte
+          type: file
+        - path: /src/lib/components/OpenWebSearchResults.svelte
+          type: file
+        - path: /src/lib/components/WebSearchToggle.svelte
+          type: file
+        - path: /src/lib/components/ModelCardMetadata.svelte
+          type: file
+        - path: /src/lib/components/Portal.svelte
+          type: file
+        - path: /src/lib/components/ToolLogo.svelte
+          type: file
+        - path: /src/lib/components/TokensCounter.svelte
+          type: file
+        - path: /src/lib/components/ToolBadge.svelte
+          type: file
+        - path: /src/lib/components/DisclaimerModal.svelte
+          type: file
+        - path: /src/lib/components/CodeBlock.svelte
+          type: file
+        - path: /src/lib/components/SystemPromptModal.svelte
+          type: file
+      - path: /src/lib/actions
+        type: directory
+        contents:
+        - path: /src/lib/actions/snapScrollToBottom.ts
+          type: file
+        - path: /src/lib/actions/clickOutside.ts
+          type: file
+      - path: /src/lib/jobs
+        type: directory
+        contents:
+        - path: /src/lib/jobs/refresh-conversation-stats.ts
+          type: file
+        - path: /src/lib/jobs/refresh-assistants-counts.ts
+          type: file
+    - path: /src/app.html
+      type: file
+    - path: /src/hooks.server.ts
+      type: file
+    - path: /src/routes
+      type: directory
+      contents:
+      - path: /src/routes/assistant
+        type: directory
+        contents:
+        - path: /src/routes/assistant/[assistantId]
+          type: directory
+          contents:
+          - path: /src/routes/assistant/[assistantId]/+page.server.ts
+            type: file
+          - path: /src/routes/assistant/[assistantId]/+page.svelte
+            type: file
+          - path: /src/routes/assistant/[assistantId]/thumbnail.png
+            type: directory
+            contents:
+            - path: /src/routes/assistant/[assistantId]/thumbnail.png/+server.ts
+              type: file
+            - path: /src/routes/assistant/[assistantId]/thumbnail.png/ChatThumbnail.svelte
+              type: file
+      - path: /src/routes/settings
+        type: directory
+        contents:
+        - path: /src/routes/settings/+layout.server.ts
+          type: file
+        - path: /src/routes/settings/(nav)
+          type: directory
+          contents:
+          - path: /src/routes/settings/(nav)/+page.svelte
+            type: file
+          - path: /src/routes/settings/(nav)/assistants
+            type: directory
+            contents:
+            - path: /src/routes/settings/(nav)/assistants/new
+              type: directory
+              contents:
+              - path: /src/routes/settings/(nav)/assistants/new/+page.server.ts
+                type: file
+              - path: /src/routes/settings/(nav)/assistants/new/+page@settings.svelte
+                type: file
+            - path: /src/routes/settings/(nav)/assistants/[assistantId]
+              type: directory
+              contents:
+              - path: /src/routes/settings/(nav)/assistants/[assistantId]/+page.server.ts
+                type: file
+              - path: /src/routes/settings/(nav)/assistants/[assistantId]/+page.svelte
+                type: file
+              - path: /src/routes/settings/(nav)/assistants/[assistantId]/+page.ts
+                type: file
+              - path: /src/routes/settings/(nav)/assistants/[assistantId]/edit
+                type: directory
+                contents:
+                - path: /src/routes/settings/(nav)/assistants/[assistantId]/edit/+page.server.ts
+                  type: file
+                - path: /src/routes/settings/(nav)/assistants/[assistantId]/edit/+page@settings.svelte
+                  type: file
+              - path: /src/routes/settings/(nav)/assistants/[assistantId]/avatar.jpg
+                type: directory
+                contents:
+                - path: /src/routes/settings/(nav)/assistants/[assistantId]/avatar.jpg/+server.ts
+                  type: file
+              - path: /src/routes/settings/(nav)/assistants/[assistantId]/ReportModal.svelte
+                type: file
+          - path: /src/routes/settings/(nav)/+server.ts
+            type: file
+          - path: /src/routes/settings/(nav)/+layout.svelte
+            type: file
+        - path: /src/routes/settings/+layout.svelte
+          type: file
+      - path: /src/routes/tools
+        type: directory
+        contents:
+        - path: /src/routes/tools/+layout.ts
+          type: file
+        - path: /src/routes/tools/[toolId]
+          type: directory
+          contents:
+          - path: /src/routes/tools/[toolId]/+page.server.ts
+            type: file
+          - path: /src/routes/tools/[toolId]/+page.svelte
+            type: file
+          - path: /src/routes/tools/[toolId]/edit
+            type: directory
+            contents:
+            - path: /src/routes/tools/[toolId]/edit/+page.server.ts
+              type: file
+            - path: /src/routes/tools/[toolId]/edit/+page.svelte
+              type: file
+          - path: /src/routes/tools/[toolId]/+layout.server.ts
+            type: file
+        - path: /src/routes/tools/+page.server.ts
+          type: file
+        - path: /src/routes/tools/+page.svelte
+          type: file
+        - path: /src/routes/tools/ToolEdit.svelte
+          type: file
+        - path: /src/routes/tools/new
+          type: directory
+          contents:
+          - path: /src/routes/tools/new/+page.server.ts
+            type: file
+          - path: /src/routes/tools/new/+page.svelte
+            type: file
+        - path: /src/routes/tools/ToolInputComponent.svelte
+          type: file
+        - path: /src/routes/tools/+layout.svelte
+          type: file
+      - path: /src/routes/privacy
+        type: directory
+        contents:
+        - path: /src/routes/privacy/+page.svelte
+          type: file
+      - path: /src/routes/+page.svelte
+        type: file
+      - path: /src/routes/assistants
+        type: directory
+        contents:
+        - path: /src/routes/assistants/+page.server.ts
+          type: file
+        - path: /src/routes/assistants/+page.svelte
+          type: file
+      - path: /src/routes/+error.svelte
+        type: file
+      - path: /src/routes/healthcheck
+        type: directory
+        contents:
+        - path: /src/routes/healthcheck/+server.ts
+          type: file
+      - path: /src/routes/admin
+        type: directory
+        contents:
+        - path: /src/routes/admin/export
+          type: directory
+          contents:
+          - path: /src/routes/admin/export/+server.ts
+            type: file
+        - path: /src/routes/admin/stats
+          type: directory
+          contents:
+          - path: /src/routes/admin/stats/compute
+            type: directory
+            contents:
+            - path: /src/routes/admin/stats/compute/+server.ts
+              type: file
+      - path: /src/routes/r
+        type: directory
+        contents:
+        - path: /src/routes/r/[id]
+          type: directory
+          contents:
+          - path: /src/routes/r/[id]/+page.ts
+            type: file
+      - path: /src/routes/logout
+        type: directory
+        contents:
+        - path: /src/routes/logout/+page.server.ts
+          type: file
+      - path: /src/routes/models
+        type: directory
+        contents:
+        - path: /src/routes/models/+page.svelte
+          type: file
+      - path: /src/routes/+layout.server.ts
+        type: file
+      - path: /src/routes/conversations
+        type: directory
+        contents:
+        - path: /src/routes/conversations/+page.server.ts
+          type: file
+      - path: /src/routes/api
+        type: directory
+        contents:
+        - path: /src/routes/api/assistant
+          type: directory
+          contents:
+          - path: /src/routes/api/assistant/[id]
+            type: directory
+            contents:
+            - path: /src/routes/api/assistant/[id]/+server.ts
+              type: file
+        - path: /src/routes/api/tools
+          type: directory
+          contents:
+          - path: /src/routes/api/tools/[toolId]
+            type: directory
+            contents:
+            - path: /src/routes/api/tools/[toolId]/+server.ts
+              type: file
+          - path: /src/routes/api/tools/search
+            type: directory
+            contents:
+            - path: /src/routes/api/tools/search/+server.ts
+              type: file
+        - path: /src/routes/api/assistants
+          type: directory
+          contents:
+          - path: /src/routes/api/assistants/+server.ts
+            type: file
+        - path: /src/routes/api/user
+          type: directory
+          contents:
+          - path: /src/routes/api/user/assistants
+            type: directory
+            contents:
+            - path: /src/routes/api/user/assistants/+server.ts
+              type: file
+          - path: /src/routes/api/user/+server.ts
+            type: file
+        - path: /src/routes/api/models
+          type: directory
+          contents:
+          - path: /src/routes/api/models/+server.ts
+            type: file
+        - path: /src/routes/api/conversations
+          type: directory
+          contents:
+          - path: /src/routes/api/conversations/+server.ts
+            type: file
+        - path: /src/routes/api/spaces-config
+          type: directory
+          contents:
+          - path: /src/routes/api/spaces-config/+server.ts
+            type: file
+        - path: /src/routes/api/conversation
+          type: directory
+          contents:
+          - path: /src/routes/api/conversation/[id]
+            type: directory
+            contents:
+            - path: /src/routes/api/conversation/[id]/+server.ts
+              type: file
+      - path: /src/routes/login
+        type: directory
+        contents:
+        - path: /src/routes/login/+page.server.ts
+          type: file
+        - path: /src/routes/login/callback
+          type: directory
+          contents:
+          - path: /src/routes/login/callback/+page.server.ts
+            type: file
+          - path: /src/routes/login/callback/updateUser.spec.ts
+            type: file
+          - path: /src/routes/login/callback/updateUser.ts
+            type: file
+      - path: /src/routes/+layout.svelte
+        type: file
+      - path: /src/routes/conversation
+        type: directory
+        contents:
+        - path: /src/routes/conversation/+server.ts
+          type: file
+        - path: /src/routes/conversation/[id]
+          type: directory
+          contents:
+          - path: /src/routes/conversation/[id]/+page.server.ts
+            type: file
+          - path: /src/routes/conversation/[id]/+page.svelte
+            type: file
+          - path: /src/routes/conversation/[id]/stop-generating
+            type: directory
+            contents:
+            - path: /src/routes/conversation/[id]/stop-generating/+server.ts
+              type: file
+          - path: /src/routes/conversation/[id]/+server.ts
+            type: file
+          - path: /src/routes/conversation/[id]/output
+            type: directory
+            contents:
+            - path: /src/routes/conversation/[id]/output/[sha256]
+              type: directory
+              contents:
+              - path: /src/routes/conversation/[id]/output/[sha256]/+server.ts
+                type: file
+          - path: /src/routes/conversation/[id]/message
+            type: directory
+            contents:
+            - path: /src/routes/conversation/[id]/message/[messageId]
+              type: directory
+              contents:
+              - path: /src/routes/conversation/[id]/message/[messageId]/vote
+                type: directory
+                contents:
+                - path: /src/routes/conversation/[id]/message/[messageId]/vote/+server.ts
+                  type: file
+              - path: /src/routes/conversation/[id]/message/[messageId]/prompt
+                type: directory
+                contents:
+                - path: /src/routes/conversation/[id]/message/[messageId]/prompt/+server.ts
+                  type: file
+          - path: /src/routes/conversation/[id]/share
+            type: directory
+            contents:
+            - path: /src/routes/conversation/[id]/share/+server.ts
+              type: file

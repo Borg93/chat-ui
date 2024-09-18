@@ -2,7 +2,6 @@
 	import { base } from "$app/paths";
 
 	import Logo from "$lib/components/icons/Logo.svelte";
-	import { switchTheme } from "$lib/switchTheme";
 	import { isAborted } from "$lib/stores/isAborted";
 	import { env as envPublic } from "$env/dynamic/public";
 	import NavConversationItem from "./NavConversationItem.svelte";
@@ -109,13 +108,13 @@
 			</button>
 		</form>
 	{/if}
-	<button
+	<!-- <button
 		on:click={switchTheme}
 		type="button"
 		class="flex h-9 flex-none items-center gap-1.5 rounded-lg pl-2.5 pr-2 text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700"
 	>
 		Theme
-	</button>
+	</button> -->
 	{#if nModels > 1}
 		<a
 			href="{base}/models"

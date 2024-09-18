@@ -477,8 +477,8 @@
 							</span>
 						{/if}
 					{/if}
-					<span class="max-sm:hidden">·</span><br class="sm:hidden" /> Generated content may be inaccurate
-					or false.
+					<!-- <span class="max-sm:hidden">·</span><br class="sm:hidden" /> Generated content may be inaccurate
+					or false. -->
 				</p>
 				{#if messages.length}
 					<button

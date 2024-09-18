@@ -44,7 +44,7 @@
 		</div>
 	</div>
 	<div class="lg:col-span-2 lg:pl-24">
-		{#each announcementBanners as banner}
+		<!-- {#each announcementBanners as banner}
 			<AnnouncementBanner classNames="mb-4" title={banner.title}>
 				<a
 					target="_blank"
@@ -52,8 +52,8 @@
 					class="mr-2 flex items-center underline hover:no-underline">{banner.linkTitle}</a
 				>
 			</AnnouncementBanner>
-		{/each}
-		<div class="overflow-hidden rounded-xl border dark:border-gray-800">
+		{/each} -->
+		<!-- <div class="overflow-hidden rounded-xl border dark:border-gray-800">
 			<div class="flex p-3">
 				<div>
 					<div class="text-sm text-gray-600 dark:text-gray-400">Current Model</div>
@@ -77,9 +77,9 @@
 				>
 			</div>
 			<ModelCardMetadata variant="dark" model={currentModel} />
-		</div>
+		</div> -->
 	</div>
-	{#if currentModelMetadata.promptExamples}
+	<!-- {#if currentModelMetadata.promptExamples}
 		<div class="lg:col-span-3 lg:mt-6">
 			<p class="mb-3 text-gray-600 dark:text-gray-300">Examples</p>
 			<div class="grid gap-3 lg:grid-cols-3 lg:gap-5">
@@ -93,6 +93,6 @@
 					</button>
 				{/each}
 			</div>
-		</div>{/if}
+		</div>{/if} -->
 	<div class="h-40 sm:h-24" />
 </div>
